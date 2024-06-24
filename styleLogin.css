@@ -1,0 +1,257 @@
+/* Reset y estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para el encabezado */
+header {
+    position: relative;
+    background: url(./img/vacasLogin.jpg) no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 145px;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    background-color: #CAD2C5;
+}
+
+.ola{
+    margin-bottom: 20px;
+}
+
+/* Estilos para el título */
+h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos para el contenedor principal del formulario */
+.Formulario {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    width: 90%;
+    height: 550px;
+    max-width: 500px;
+    margin: 0 auto; /* Centrar el formulario */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.contenedorInput{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    align-items: center;
+    padding-right:2%;
+    border-radius: 5px;
+}
+
+
+/* Estilos para los inputs del formulario */
+.formulario input:not(.recordar) {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+}
+
+/* Estilos para el ícono dentro del input */
+.divEntradas i{
+    color: #354F52;
+    width: 20px;
+    height: 20px;
+    bottom: 25px;
+}
+/* Estilos para los botones y enlaces */
+.formulario .botones {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 130%;
+    font-size: 13px;
+
+}
+
+.formulario .boton:hover{
+    background-color: #84A98c;
+    font-size: 15px;
+}
+
+.botones a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+    margin: 0 5px;
+}
+
+.botones a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* Estilos para los mensajes de error y otros textos */
+.registrarse p:not(.texto) {
+    font-size: 10px;
+    margin: 10px 0 25px 0;
+}
+
+.formulario p.texto {
+    font-size: 15px;
+}
+
+/* Estilos para el placeholder dentro de los inputs */
+input::placeholder {
+    color: #2f3e46;
+}
+
+/* Estilos para el botón de submit */
+.formulario button {
+    width: 100%;
+    padding: 15px;
+    margin: 60px 0 5px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #436850;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:430px) {
+    header {
+        background: url(./img/vacas_corta.jpg) no-repeat bottom;
+        background-size: cover;
+    }
+}
+
+
+/* Media query para ajustes en pantallas más grandes */
+@media screen and (min-width: 720px) {
+
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .contenedorPrincipal{
+        display: flex;
+        justify-content: center;
+    }
+
+    .svgOla{
+        height: 0 !important; 
+        width: 0 !important;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+    }
+    
+
+    .Formulario{
+        height: 90vh;
+        width: 45vw;
+        max-width: 30vw;
+        max-width: 490px;
+        padding-top: 10px;
+
+    }
+    header{
+        width: 45vw;    
+        background: url(./img/vacasLogin.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        border-radius: 10px;
+        position: relative;
+        max-width: 490px;
+    }
+
+    .ola{
+        margin: 0;
+    }
+
+
+    .formulario .boton{
+        margin-top: 80px;
+    } 
+    
+}
+
+
+
+
+
+.effect.effect-5 {
+    transition: all 0.2s linear 0s;
+    
+    &:before {
+      content: "\f054";
+      font-family: FontAwesome;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 30px;
+      border-radius: 0 50% 50% 0;
+      transform: scale(0,1);
+      transform-origin: left center;
+      transition: all 0.2s linear 0s;
+      color: white;
+      background-color: #a7bdac;
+    }
+    
+     &:hover {
+      text-indent: 30px;
+      
+      &:before {
+        transform: scale(1,1);
+        text-indent: 0;
+      }
+    }
+}
+
+.effect {
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        text-transform: capitalize;
+        /* background-color: - add your own background-color */
+        padding: 20px 0px;
+        overflow: hidden;
+      }
