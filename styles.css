@@ -160,7 +160,9 @@ header .logo img:hover {
     .main .titulo {
         font-size: 2rem;
     }
-
+    .logo {
+    opacity: 0;
+    }
 }
 
 
